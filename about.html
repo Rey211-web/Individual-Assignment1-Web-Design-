@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="icon" type="image/png" href="favicon1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <picture class="logo">Personal Website</picture>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="role.html">Business</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+    <section>
+
+<img src="c:\WEB DESIGN\left view coffee shop.jpeg" alt="Coffee Shop">
+
+<h2>Background</h2>
+<p>
+My name is Mohammad Usamah bin Shaiful Hizam. I was born on 14 June 1998 and I am currently 28 years old. 
+I am married and based in Alor Setar, Kedah. As a cafe worker, 
+I take pride in providing good service and creating a welcoming environment for customers. 
+I am a dedicated and hardworking individual who values discipline, responsibility, and positive customer relationships. 
+Working in the coffee industry has helped me improve my communication skills, teamwork, and ability to handle customers professionally. 
+Through my work, I aim not only to serve quality coffee and beverages but also to create a comfortable and enjoyable experience for the community.
+
+</p>
+
+<h2>Journey</h2>
+<p>
+My journey began in the field of computing at GIATMARA, where I developed 
+technical knowledge and discipline. I later worked as a laptop technician, 
+a role that strengthened my problem-solving mindset and attention to detail.
+</p>
+
+<p>
+However, my true passion was always rooted in entrepreneurship. I wanted 
+to build something meaningful not just a business, but a place where people 
+feel at home. This vision led me to establish my own coffee shop in Kampung Wai.
+</p>
+
+<h2>Experience</h2>
+<p>
+From 2020 to 2022, I worked at PC Depot, handling laptop repairs and maintenance. 
+This experience taught me patience, customer service, and precision skills 
+that I now apply in managing my café.
+</p>
+
+<h2>Skills</h2>
+<p>• Strong communication and customer engagement</p>
+<p>• Technical troubleshooting and adaptability</p>
+<p>• Small business management and creativity</p>
+</section>
+
+<footer>
+    <p>© 2026 Wai Coffee Perlis | Crafted with passion</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.classList.add("loaded");
+});
+
+// fade out bila klik link
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        if (this.href && this.href.includes(".html")) {
+            e.preventDefault();
+            document.body.classList.remove("loaded");
+            setTimeout(() => {
+                window.location = this.href;
+            }, 300);
+        }
+    });
+});
+</script>
+</body>
+</html>

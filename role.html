@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business</title>
+    <link rel="icon" type="image/png" href="favicon1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <picture class="logo">Personal Website</picture>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="role.html" class="active">Business</a></li>
+    </ul>
+</nav>
+
+<section>
+<h1>The Coffee Business</h1>
+
+<img src="c:\WEB DESIGN\flag coffee shop.jpeg" alt="Coffee Business">
+
+<h2>My Role</h2>
+<p>
+As a hardworking cafe worker, I am responsible for preparing beverages, serving customers, 
+and helping to maintain a clean and comfortable environment in the café. I always strive 
+to provide friendly service and ensure that every customer feels welcomed and satisfied. 
+I believe that a great coffee shop is not only about the quality of the drinks, but also 
+about the positive experience and warm atmosphere created for the community.
+
+</p>
+
+<h2>Business Concept</h2>
+<p>
+The cafe is designed as a calm and aesthetic space inspired by local village 
+life. It blends modern coffee culture with traditional warmth, creating a 
+unique identity in Perlis.
+</p>
+
+<h2>Contribution to Community</h2>
+<p>
+This business supports the local economy and provides a social space where 
+people can relax, work, and connect. It also promotes local culture through 
+its environment and menu.
+</p>
+</section>
+
+<footer>
+    <p>© 2026 Wai Coffee Perlis | Crafted with passion</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.classList.add("loaded");
+});
+
+// fade out bila klik link
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        if (this.href && this.href.includes(".html")) {
+            e.preventDefault();
+            document.body.classList.remove("loaded");
+            setTimeout(() => {
+                window.location = this.href;
+            }, 300);
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muhammad Usamah Website</title>
+    <link rel="icon" type="image/png" href="favicon1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <picture class="logo">Personal Website</picture>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="role.html">Business</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+<img src="c:\WEB DESIGN\landscape owner coffee.jpeg" alt="Coffee Shop Owner">
+
+<h1>Mohammad Usamah bin Shaiful Hizam</h1>
+
+<p>
+More than just a coffee seller, I am a storyteller through every cup. 
+Based in Kampung Wai, Perlis, my cafe is a place where tradition meets 
+modern coffee culture, offering warmth, comfort, and genuine connection.
+</p>
+
+<a href="about.html" class="btn">Discover My Story</a>
+
+</section>
+
+<footer>
+    <p>© 2026 Wai Coffee Perlis | Crafted with passion</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.classList.add("loaded");
+});
+
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        if (this.href && this.href.includes(".html")) {
+            e.preventDefault();
+            document.body.classList.remove("loaded");
+            setTimeout(() => {
+                window.location = this.href;
+            }, 300);
+        }
+    });
+});
+</script>
+</body>
+</html>
